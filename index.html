@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-label="Calculator">
+
+      <header class="branding">
+        <div class="brand-name">
+          <span>CALCULATOR</span>
+          <strong>CT-08</strong>
+        </div>
+        <span class="model">8 DIGITS</span>
+      </header>
+
+      <div class="screen-frame">
+        <div class="screen">
+          <div class="screen-history" id="expression"></div>
+          <div class="screen-value" id="display" aria-live="polite">0</div>
+        </div>
+      </div>
+
+      <div class="solar-panel" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="keypad">
+        <button class="key function" data-action="clear">AC</button>
+        <button class="key function" data-action="sign">+/−</button>
+        <button class="key function" data-action="percent">%</button>
+        <button class="key operator" data-operator="÷">÷</button>
+
+        <button class="key" data-number="7">7</button>
+        <button class="key" data-number="8">8</button>
+        <button class="key" data-number="9">9</button>
+        <button class="key operator" data-operator="×">×</button>
+
+        <button class="key" data-number="4">4</button>
+        <button class="key" data-number="5">5</button>
+        <button class="key" data-number="6">6</button>
+        <button class="key operator" data-operator="−">−</button>
+
+        <button class="key" data-number="1">1</button>
+        <button class="key" data-number="2">2</button>
+        <button class="key" data-number="3">3</button>
+        <button class="key operator" data-operator="+">+</button>
+
+        <button class="key zero" data-number="0">0</button>
+        <button class="key" data-action="decimal">.</button>
+        <button class="key equals" data-action="equals">=</button>
+      </div>
+
+      <footer class="calculator-foot">
+        <span>CT-08</span>
+        <span>DUAL POWER</span>
+      </footer>
+
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
